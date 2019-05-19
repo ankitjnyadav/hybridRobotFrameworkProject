@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190520 00:13:00.262" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\robotFramework\scripts\test1\tests\RFTutorial.robot" id="s1" name="RFTutorial">
+<test id="s1-t1" name="Should be able to access &quot;Contact&quot; Page">
+<kw type="setup" name="Before Test" library="CommonUtilities">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190520 00:13:00.945" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20190520 00:13:02.983" starttime="20190520 00:13:00.945"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190520 00:13:02.989" starttime="20190520 00:13:02.983"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:02.990" starttime="20190520 00:13:00.944"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing Test1</arg>
+</arguments>
+<msg timestamp="20190520 00:13:02.991" level="INFO">Executing Test1</msg>
+<status status="PASS" endtime="20190520 00:13:02.991" starttime="20190520 00:13:02.990"></status>
+</kw>
+<kw name="Go To &quot;homePage&quot; Page" library="RFTutorialApp">
+<kw name="Go To The Base URL" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20190520 00:13:02.996" level="INFO">Opening url 'http://www.robotframeworktutorial.com/'</msg>
+<status status="PASS" endtime="20190520 00:13:06.930" starttime="20190520 00:13:02.995"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:06.930" starttime="20190520 00:13:02.994"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:06.931" starttime="20190520 00:13:02.993"></status>
+</kw>
+<kw name="Verify HomePage Pg Load" library="RFTutorialApp">
+<kw name="verify Header" library="homePage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>css=h1.entry-title main_title</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190520 00:13:12.313" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190520 00:13:12.313" starttime="20190520 00:13:12.005"></status>
+</kw>
+<msg timestamp="20190520 00:13:12.317" level="FAIL">Element 'css=h1.entry-title main_title' did not appear in 5 seconds.</msg>
+<status status="FAIL" endtime="20190520 00:13:12.317" starttime="20190520 00:13:06.934"></status>
+</kw>
+<status status="FAIL" endtime="20190520 00:13:12.317" starttime="20190520 00:13:06.934"></status>
+</kw>
+<status status="FAIL" endtime="20190520 00:13:12.317" starttime="20190520 00:13:06.933"></status>
+</kw>
+<kw type="teardown" name="After Test" library="CommonUtilities">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190520 00:13:14.830" starttime="20190520 00:13:12.319"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:14.831" starttime="20190520 00:13:12.318"></status>
+</kw>
+<doc>This is First TC</doc>
+<tags>
+<tag>Test1</tag>
+</tags>
+<status status="FAIL" endtime="20190520 00:13:14.831" critical="yes" starttime="20190520 00:13:00.943">Element 'css=h1.entry-title main_title' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="Should be able to access &quot;Testimonial&quot; Page">
+<kw type="setup" name="Before Test" library="CommonUtilities">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190520 00:13:14.837" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20190520 00:13:16.985" starttime="20190520 00:13:14.836"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190520 00:13:16.992" starttime="20190520 00:13:16.986"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:16.992" starttime="20190520 00:13:14.836"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Executing Test2</arg>
+</arguments>
+<msg timestamp="20190520 00:13:16.994" level="INFO">Executing Test2</msg>
+<status status="PASS" endtime="20190520 00:13:16.994" starttime="20190520 00:13:16.993"></status>
+</kw>
+<kw name="Go To &quot;homePage&quot; Page" library="RFTutorialApp">
+<kw name="Go To The Base URL" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20190520 00:13:16.998" level="INFO">Opening url 'http://www.robotframeworktutorial.com/'</msg>
+<status status="PASS" endtime="20190520 00:13:19.626" starttime="20190520 00:13:16.997"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:19.627" starttime="20190520 00:13:16.996"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:19.627" starttime="20190520 00:13:16.995"></status>
+</kw>
+<kw name="Go To &quot;Contacts&quot; Page" library="RFTutorialApp">
+<kw name="Go To &quot;Contact&quot; Page" library="homePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=ul#top-menu li:nth-child(4) a</arg>
+</arguments>
+<msg timestamp="20190520 00:13:19.640" level="INFO">Clicking element 'css=ul#top-menu li:nth-child(4) a'.</msg>
+<status status="PASS" endtime="20190520 00:13:19.814" starttime="20190520 00:13:19.640"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:19.815" starttime="20190520 00:13:19.639"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:19.815" starttime="20190520 00:13:19.638"></status>
+</kw>
+<kw name="Verify Contact Pg Load" library="RFTutorialApp">
+<kw name="verify Header" library="Contact">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>css=#et_pb_contact_name_1</arg>
+</arguments>
+<status status="PASS" endtime="20190520 00:13:20.173" starttime="20190520 00:13:19.817"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:20.173" starttime="20190520 00:13:19.817"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:20.173" starttime="20190520 00:13:19.816"></status>
+</kw>
+<kw name="Go To &quot;Testimonial&quot; Page" library="RFTutorialApp">
+<kw name="Go To &quot;Testimonial&quot; Page" library="homePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=ul#top-menu li:nth-child(3) a</arg>
+</arguments>
+<msg timestamp="20190520 00:13:20.176" level="INFO">Clicking element 'css=ul#top-menu li:nth-child(3) a'.</msg>
+<status status="PASS" endtime="20190520 00:13:20.395" starttime="20190520 00:13:20.175"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:20.395" starttime="20190520 00:13:20.174"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:20.395" starttime="20190520 00:13:20.173"></status>
+</kw>
+<kw name="RFTutorialApp.Verify Testimonial Pg Load" library="RFTutorialApp">
+<kw name="Testimonials.verify Header">
+<msg timestamp="20190520 00:13:20.414" level="FAIL">No keyword with name 'Testimonials.verify Header' found.</msg>
+<status status="FAIL" endtime="20190520 00:13:20.414" starttime="20190520 00:13:20.413"></status>
+</kw>
+<status status="FAIL" endtime="20190520 00:13:20.414" starttime="20190520 00:13:20.397"></status>
+</kw>
+<kw type="teardown" name="After Test" library="CommonUtilities">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190520 00:13:22.908" starttime="20190520 00:13:20.416"></status>
+</kw>
+<status status="PASS" endtime="20190520 00:13:22.909" starttime="20190520 00:13:20.415"></status>
+</kw>
+<doc>This is Second TC</doc>
+<tags>
+<tag>Test2</tag>
+</tags>
+<status status="FAIL" endtime="20190520 00:13:22.909" critical="yes" starttime="20190520 00:13:14.834">No keyword with name 'Testimonials.verify Header' found.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" endtime="20190520 00:13:22.913" starttime="20190520 00:13:00.267"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Test1</stat>
+<stat fail="1" pass="0">Test2</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="RFTutorial" pass="0">RFTutorial</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190520 00:13:00.923" level="ERROR">Error in file 'C:\robotFramework\scripts\test1\Resources\RFTutorialApp.robot': Resource file '..\Resources\Pages\CourseList.robot' does not exist.</msg>
+<msg timestamp="20190520 00:13:00.934" level="ERROR">Error in file 'C:\robotFramework\scripts\test1\Resources\RFTutorialApp.robot': Resource file 'C:\robotFramework\scripts\test1\Resources\Pages\Testimonials.robot' cannot contain tests or tasks.</msg>
+</errors>
+</robot>
